@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Pop-up Form</title>
+    <link rel="stylesheet" href="stylepop.css">
+</head>
+<body>
+
+    <!-- Button to Open the Form -->
+    <button id="openForm">Get a Quote</button>
+
+   <!-- Pop-up Form -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeForm">&times;</span>
+            <h2>Fill Your Details</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" required>
+
+                <label for="purpose">Purpose:</label>
+                <textarea id="purpose" required></textarea>
+
+                <label>Project Type:</label>
+                <input type="checkbox" id="construction" value="Construction"> Construction
+                <input type="checkbox" id="interior" value="Interior"> Interior
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scriptpop.js"></script>
+</body>
+</html>
